@@ -1,10 +1,10 @@
 
 export const WEDDING_DATA = {
     guestName: "Khách Quý",
-    time: "18 GIỜ 00",
+    time: "10 GIỜ 00",
     day: "THỨ BẢY",
-    date: "10.01.2026",
-    lunarDate: "22 tháng 11 năm Ất Tỵ",
+    date: "08.01.2026",
+    lunarDate: "20 tháng 11 năm Ất Tỵ",
     eventDate: 10, 
     
     location: {
