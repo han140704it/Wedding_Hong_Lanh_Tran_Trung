@@ -706,3 +706,123 @@ background-color:  #790a0a;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     transform: scale(1.02); 
 }
+/* Container cho các hạt rơi */
+.floating-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Không ngăn cản việc click vào nút bên dưới */
+  z-index: 99;
+  overflow: hidden;
+}
+
+.heart-particle {
+  position: absolute;
+  color: rgba(212, 163, 115, 0.4); /* Màu vàng nhạt hoặc hồng nhạt */
+  font-size: 20px;
+  user-select: none;
+}
+
+/* Hiệu ứng nhịp đập cho con dấu sáp (Wax Seal) */
+.wax-seal-img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Nút nhạc xoay tròn khi đang phát */
+.spinning {
+  animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Làm cho grid ảnh mượt mà hơn */
+.grid-item {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.grid-item img {
+  transition: transform 0.5s ease;
+}
+
+.grid-item:hover img {
+  transform: scale(1.1); /* Zoom nhẹ khi hover */
+}
+
+/* Smooth Scrolling cho toàn bộ trang */
+html {
+  scroll-behavior: smooth;
+}
+
+/*PHÓNG TO ẢNH/
+/* Lớp phủ mờ nền */
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85); /* Nền đen mờ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Luôn nằm trên cùng */
+  backdrop-filter: blur(5px); /* Làm mờ hậu cảnh */
+}
+.lightbox-content {
+  position: relative; 
+  max-width: 95%;
+  max-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-content img {
+  width: 90%;
+  height: auto;
+  max-height: 80vh;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border: 4px solid white;
+}
+
+/* CẬP NHẬT: Nút đóng nhỏ lại và nằm trong ảnh */
+.close-lightbox {
+  position: absolute;
+  /* Đặt vị trí vào góc trên bên phải bên trong khung ảnh */
+  top: 10px;
+  right: 10px;
+
+  /* Điều chỉnh kích thước và kiểu dáng */
+  background: rgba(0, 0, 0, 0.5); /* Nền đen mờ để dễ nhìn trên ảnh */
+  color: white;
+  border: none;
+  font-size: 20px; /* Kích thước chữ X nhỏ lại */
+  width: 32px;     /* Kích thước nút nhỏ gọn */
+  height: 32px;
+  border-radius: 50%; /* Hình tròn */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 10; /* Đảm bảo nằm trên ảnh */
+}
+
+.close-lightbox:hover {
+  background: rgba(0, 0, 0, 0.8); /* Đậm hơn khi di chuột vào */
+  transform: scale(1.1);
+}
+
+/* Thêm con trỏ zoom cho ảnh ở Grid */
+.grid-item {
+  cursor: zoom-in;
+}
