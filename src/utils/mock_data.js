@@ -5,7 +5,7 @@ export const WEDDING_DATA = {
     day: "THỨ NĂM",
     date: "08.01.2026",
     lunarDate: "20 tháng 11 năm Ất Tỵ",
-    eventDate: 10, 
+    eventDate: 8, 
     
     location: {
         name: "TƯ GIA NHÀ CÔ DÂU",
