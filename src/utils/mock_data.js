@@ -1,16 +1,16 @@
 
 export const WEDDING_DATA = {
     guestName: "Khách Quý",
-    time: "10 GIỜ 00",
-    day: "THỨ NĂM",
+    time: "10 GIỜ 30",
+    day: "THỨ BẢY",
     date: "08.01.2026",
     lunarDate: "20 tháng 11 năm Ất Tỵ",
     eventDate: 8, 
     
     location: {
         name: "TƯ GIA NHÀ CÔ DÂU",
-        address: "Thôn Quảng Tân - Xã Ea Phê - Tỉnh Đắk Lắk",
-        mapLink: "https://www.google.com/maps?q=12.668493,108.367539" 
+        address: " Thôn Quảng Tân - Xã Ea Phê - Tỉnh Đắk Lắk",
+        mapLink: "https://www.google.com/maps?q=12.668493,108.367539"
     },
     
     bankInfo: {
@@ -18,6 +18,13 @@ export const WEDDING_DATA = {
         accountNumber: "689199877777 ",
         accountName: "Trần Văn Trung",
         qrCode: "/assets/account/1.png" 
+    },
+    couple:{
+        brideName: "Nguyễn Hồng Lanh",
+        imagebride: "/assets/couple/bride.jpg",
+        groomName: "Trần Văn Trung",
+        imagegroom: "/assets/couple/groom.jpg"
+
     },
 
     loveStory: {
@@ -32,12 +39,17 @@ export const WEDDING_DATA = {
 
     assets: {
         couplePhoto: "/assets/couple/1.jpg",
-        couplePhoto1: "/assets/couple/3.jpg",
-        couplePhoto2: "/assets/couple/8.jpg",
-        couplePhoto3: "/assets/couple/5.jpg",
-        couplePhoto4: "/assets/couple/2.jpg",
-        couplePhoto5: "/assets/couple/7.jpg",
-        couplePhoto6: "/assets/couple/2.jpg",
+        couplePhoto1: "/assets/couple/5.jpg",
+        couplePhoto2: "/assets/couple/6.jpg",
+        couplePhoto3: "/assets/couple/7.jpg",
+        couplePhoto4: "/assets/couple/8.jpg",
+        couplePhoto5: "/assets/couple/9.jpg",
+        couplePhoto6: "/assets/couple/10.jpg",
+        couplePhoto7: "/assets/couple/11.jpg",
+        couplePhoto8: "/assets/couple/12.jpg",
+        couplePhoto9: "/assets/couple/13.jpg",
+        couplePhoto10: "/assets/couple/14.jpg",
+        couplePhoto11: "/assets/couple/2.jpg",
         flowerTop: "https://i.imgur.com/vHqX3p1.png",
         flowerBottom: "https://i.imgur.com/vHqX3p1.png",
         giftIcon: "https://cdn-icons-png.flaticon.com/512/4213/4213652.png"
